@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--  -->
+
+  <JDS_Wooden_Crate.label>货箱</JDS_Wooden_Crate.label>
+  <JDS_Wooden_Crate.description>一个打开的运输用木条板箱</JDS_Wooden_Crate.description>
+
+  <JDS_Wooden_Crate2.label>货箱2</JDS_Wooden_Crate2.label>
+  <JDS_Wooden_Crate2.description>一个打开的运输用木条板箱</JDS_Wooden_Crate2.description>
+  
+  <JDS_Wooden_Crate3.label>货箱3</JDS_Wooden_Crate3.label>
+  <JDS_Wooden_Crate3.description>一个打开的运输用木条板箱</JDS_Wooden_Crate3.description>
+  
+  <JDS_Wooden_Crate4.label>货箱4</JDS_Wooden_Crate4.label>
+  <JDS_Wooden_Crate4.description>一个打开的运输用木条板箱</JDS_Wooden_Crate4.description>
+  
+  <JDS_Wooden_Crate_Large.label>大型货箱</JDS_Wooden_Crate_Large.label>
+  <JDS_Wooden_Crate_Large.description>一个可以用来安全储存很多物品的大容量货箱</JDS_Wooden_Crate_Large.description>
+  
+  <JDS_Metal_Crate.label>金属货箱</JDS_Metal_Crate.label>
+  <JDS_Metal_Crate.description>一个可以用来安全储存很多物品的大容量货箱，储存于此的物品即使露天也不会老化</JDS_Metal_Crate.description>
+  
+  <JDS_Metal_Crate_Pile.label>金属货箱堆</JDS_Metal_Crate_Pile.label>
+  <JDS_Metal_Crate_Pile.description>一个可以用来安全储存很多物品的大容量货箱，储存于此的物品即使露天也不会老化</JDS_Metal_Crate_Pile.description> 
+  
+  <JDSMilitaryGradeCrateSmall.label>军规级货箱（小）</JDSMilitaryGradeCrateSmall.label>
+  <JDSMilitaryGradeCrateSmall.description>一个可以用来安全存放武器和其它东西的军规级货箱</JDSMilitaryGradeCrateSmall.description>   
+  
+  <JDSMilitary_Grade_Crate_Small_Pile.label>军规级货箱（小堆）</JDSMilitary_Grade_Crate_Small_Pile.label>
+  <JDSMilitary_Grade_Crate_Small_Pile.description>一个可以用来安全存放武器和其它东西的军规级货箱</JDSMilitary_Grade_Crate_Small_Pile.description> 
+
+  <JDSMilitary_Grade_Crate_Long.label>军规级货箱（长）<JDSMilitary_Grade_Crate_Long.label>
+  <JDSMilitary_Grade_Crate_Long.description>一个可以用来安全存放武器和其它东西的军规级货箱</JDSMilitary_Grade_Crate_Long.description>   
+  
+  <JDSMilitary_Grade_crate_Large.label>军规级货箱（大）<JDSMilitary_Grade_crate_Large.label>
+  <JDSMilitary_Grade_crate_Large.description>一个可以用来安全存放武器和其它东西的军规级货箱</JDSMilitary_Grade_crate_Large.description> 
+
+  <JDSShippingContainerRed.label>集装箱（红色）<JDSShippingContainerRed.label>
+  <JDSShippingContainerRed.description>一个适合运输，储存和处理的结实的集装箱</JDSShippingContainerRed.description> 
+
+  <JDSShippingContainerBlue.label>集装箱（蓝色）<JDSShippingContainerBlue.label>
+  <JDSShippingContainerBlue.description>一个适合运输，储存和处理的结实的集装箱</JDSShippingContainerBlue.description>   
+  
+  <JDSShippingContainerGreen.label>集装箱（蓝色）<JDSShippingContainerGreen.label>
+  <JDSShippingContainerGreen.description>一个适合运输，储存和处理的结实的集装箱</JDSShippingContainerGreen.description>  
+  
+  <JDSPallet_Box.label>货盘箱<JDSPallet_Box.label>
+  <JDSPallet_Box.description>货盘上的硬纸板箱</JDSPallet_Box.description>   
+  
+  <JDSPallet_Container.label>货盘容器货盘箱<JDSPallet_Container.label>
+  <JDSPallet_Container.description>密封储存物品的金属罐</JDSPallet_Container.description>   
+</LanguageData>

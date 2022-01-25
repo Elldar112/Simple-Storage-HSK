@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Storage Base ==================== -->
+
+  <ThingDef Name="JDStorageBase" ParentName="LWM_DeepStorage" Abstract="True">
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <statBases>
+      <Beauty>0.7</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <!--<fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Artifacts</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings> -->
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>	
+  </ThingDef>
+
+	<!-- ==================== Basket ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Basket</defName>
+    <label>Basket</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Basket/Basket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Basket/Basket_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>2</Flammability>
+      <Mass>1</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Bulk Water ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Bulk_Water</defName>
+    <label>Bulk Water</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Bulkwater/Bulk_water</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Bulkwater/Bulk_water_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Bundles Wrap ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Bundles_Wrap</defName>
+    <label>Bundles Wrap</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/BundlesWrap/Bundles_Wrap</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/BundlesWrap/Bundles_Wrap_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Cloth>5</Cloth>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Bundles Wrap Big ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Bundles_Wrap_Big</defName>
+    <label>Bundles Wrap Big</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/BundlesWrapBig/Bundles_Wrap_Big</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/BundlesWrapBig/Bundles_Wrap_Big_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>10</Mass>
+    </statBases>
+    <costList>
+      <Cloth>250</Cloth>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Bundles Wrap Pile ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Bundles_Wrap_Pile</defName>
+    <label>Bundles Wrap Pile</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/BundlesWrapPile/Bundles_Wrap_Pile</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/BundlesWrapPile/Bundles_Wrap_Pile_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>11</Mass>
+    </statBases>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>15</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Chemfuel Pump ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_ChemfuelPump</defName>
+    <label>Chemfuel Pump</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ChemfuelPump/Chemfuel_Pump</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ChemfuelPump/Chemfuel_Pump_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>3</Flammability>
+      <Mass>10</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>	  
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Chemfuel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<!-- ==================== Chemfuel Storage ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Chemfuel_Storage</defName>
+    <label>Chemfuel Storage</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ChemfuelStorage/Chemfuel_Storage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ChemfuelStorage/Chemfuel_Storage_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>50</Mass>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Chemfuel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>35</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>	
+  </ThingDef>
+  
+	<!-- ==================== Large Chemfuel Storage ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_Chemfuel_Storage</defName>
+    <label>Chemfuel Storage Large</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargeChemfuelStorage/Large_Chemfuel_Storage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargeChemfuelStorage/Large_Chemfuel_Storage_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(5,3)</size>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+	  <Flammability>2</Flammability>  
+      <Mass>100</Mass>
+    </statBases>
+    <costList>
+      <Steel>350</Steel>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Chemfuel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+      <li>Machining</li>
+    </researchPrerequisites>	
+  </ThingDef>  
+  
+	<!-- ==================== File Box ==================== 
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_File_Box</defName>
+    <label>Files Box</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/FilesBoxs/Files_Boxs</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>	  
+      <drawSize>(2.2,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/FilesBoxs/Files_Boxs_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef> 
+  
+  ==================== File Shelf ==================== 
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_File_Shelf</defName>
+    <label>Files Shelf</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/FileShelf/File_Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>	  
+      <drawSize>(2.2,2.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/FileShelf/File_Shelf_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> 
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>  --> 
+  
+	<!-- ==================== Large Pallet ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_Pallet</defName>
+    <label>Large Pallet</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePallet/Large_Pallet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.2,2.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePallet/Large_Pallet_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>50</minNumberStacks>
+        <maxNumberStacks>20</maxNumberStacks> 
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>true</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+  
+	<!-- ==================== Large Can Pallet ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_Can_Pallet</defName>
+    <label>Large Can Pallet</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargeCanPallet/Large_Can_Pallet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>	  
+      <drawSize>(2.2,2.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargeCanPallet/Large_Can_Pallet_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>	  
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks> 
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+  
+	<!-- ==================== Large Pallet A ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_A_Pallet</defName>
+    <label>Large Pallet A</label>
+    <description>...</description>		
+    <graphicData>
+      <texPath>Things/LargePalletStuff/Large_Pallet_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass> 
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePalletStuff/Large_Pallet_A_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>      
+  
+	<!-- ==================== Large Pallet B ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_B_Pallet</defName>
+    <label>Large Pallet B</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePalletStuff/Large_Pallet_B</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePalletStuff/Large_Pallet_B_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>   
+  
+	<!-- ==================== Large Pallet C ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_C_Pallet</defName>
+    <label>Large Pallet C</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePalletStuff/Large_Pallet_C</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePalletStuff/Large_Pallet_C_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>   
+  
+	<!-- ==================== Large Pallet D ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_D_Pallet</defName>
+    <label>Large Pallet D</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePalletStuff/Large_Pallet_D</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePalletStuff/Large_Pallet_D_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+  
+	<!-- ==================== Large Pallet E ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_E_Pallet</defName>
+    <label>Large Pallet E</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePalletStuff/Large_Pallet_E</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePalletStuff/Large_Pallet_E_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+	<rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>3</Flammability>	  
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>260</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>        
+ 
+	<!-- ==================== Large Post Box ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Large_Post_Box</defName>
+    <label>Large Post Box</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/LargePostbox/Large_Postbox</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(1.1,1.1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/LargePostbox/Large_Postbox_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef> 
+ 
+	<!-- ==================== Med Storage ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Med_Storage</defName>
+    <label>Med Storage</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MedStorage/Med_storage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+	  <shaderType>CutoutComplex</shaderType>	  	  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/MedStorage/Med_storage_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>	  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+	  <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>	
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Chemfuel</li>
+          <li>MedicineIndustrial</li>	
+	      <li>MedicineUltratech</li>		
+	      <li>Neutroamine</li>		  
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>   
+ 
+ 	<!-- ==================== Metal Shelf A Full ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMetal_Shelf_A_Full</defName>
+    <label>Metal Shelf A (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfA(Full)/Metal_Shelf_A_Full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/MetalShelfA(Full)/Metal_Shelf_A_Full_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>50</Mass>
+    </statBases>
+     <costList>
+      <Steel>250</Steel>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>22</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef> 
+ 
+ 	<!-- ==================== Metal Shelf B Full ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMetal_Shelf_B_Full</defName>
+    <label>Metal Shelf B (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/MetalShelfB(Full)/Metal_Shelf_B_Full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/MetalShelfB(Full)/Metal_Shelf_B_Full_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>50</Mass>
+    </statBases>
+     <costList>
+      <Steel>250</Steel>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>22</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>   
+ 
+	<!-- ==================== Pallet ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSPallet</defName>
+    <label>Pallet</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Pallet/Pallet</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+      <drawSize>(1.1,1.1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Pallet/Pallet_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	  
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>true</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>        
+ 
+	<!-- ==================== Pallet Can ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSPallet_Can</defName>
+    <label>Pallet Can</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/PalletCan/Pallet_Can</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+	  <shaderType>CutoutComplex</shaderType>		  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/PalletCan/Pallet_Can_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+     <costList>
+      <WoodLog>5</WoodLog>
+    </costList>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>      
+ 
+	<!-- ==================== Pallet Box ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSPallet_Crate</defName>
+    <label>Pallet Crate</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/PalletCrate/Pallet_Crate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  	  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/PalletCrate/Pallet_Crate_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>	  
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>		  
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+ 
+	<!-- ==================== Safe ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSSafe</defName>
+    <label>Safe</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Safe/Safe</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  	  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Safe/Safe_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>30</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Fabrication</li>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>    
+ 
+ 	<!-- ==================== Shelf A Empty ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSShelf_A_Empty</defName>
+    <label>Shelf A (Empty)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ShelfA(Empty)/Shelf_A_Empty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ShelfA(Empty)/Shelf_A_Empty_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>135</costStuffCount>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>   
+ 
+ 	<!-- ==================== Shelf A Full ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSShelf_A_Full</defName>
+    <label>Shelf A (Full)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/ShelfA(full)/Shelf_A_full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>		  
+      <drawSize>(2.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ShelfA(full)/Shelf_A_full_UI</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>50</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>135</costStuffCount>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>    
+ 
+ 	<!-- ==================== Silo ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSSilo</defName>
+    <label>Silo</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Silo/Silo</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>		  
+      <drawSize>(5,5)</drawSize>
+      <drawRotated>false</drawRotated>  
+    </graphicData>
+    <uiIconPath>Things/Silo/Silo_UI</uiIconPath>
+    <size>(4,4)</size>
+	  <rotatable>false</rotatable>		
+    <statBases>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>50</Mass>
+    </statBases>
+    <costList>
+      <Steel>1000</Steel>
+    </costList>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>50</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Fabrication</li>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>     
+
+	<!-- ==================== Smaller locker ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSmaller_locker</defName>
+    <label>Smaller Locker</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Smallerlocker/Smaller_locker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5,1.1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Smallerlocker/Smaller_locker_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Stony</li>		
+      <li>Metallic</li>	  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>3</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>
+ 
+	<!-- ==================== large locker ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSLarge_locker</defName>
+    <label>Large Locker</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Largelocker/Large_locker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,1.1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Largelocker/Large_locker_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Stony</li>		
+      <li>Metallic</li>	  
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> 
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef> 
+ 
+	<!-- ==================== Vending Machine ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSVending_Machine</defName>
+    <label>Vending Machine A</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/VendingMachine/Vending_Machine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+	  <shaderType>CutoutComplex</shaderType>	  	  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/VendingMachine/Vending_Machine_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>		
+      <li>Metallic</li>	   
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <!--building>
+      <fixedStorageSettings>
+        <filter>
+         <thingDefs>
+          <li>Beer</li>
+          <li>GoJuice</li>
+		  <li>Neutroamine</li>
+         </thingDefs>
+        </filter>		
+      </fixedStorageSettings> 
+    </building-->		
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>  
+ 
+	<!-- ==================== Vending Machine 2 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSVending_Machine_two</defName>
+    <label>Vending Machine B</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/VendingMachine2/Vending_Machine2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+	  <shaderType>CutoutComplex</shaderType>	  	  
+      <drawSize>(1.4,1.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/VendingMachine2/Vending_Machine2_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>		
+      <li>Metallic</li>	  
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <!--building>
+      <fixedStorageSettings>
+        <filter>
+         <thingDefs>
+          <li>GoJuice</li>
+         </thingDefs>
+        </filter>		
+      </fixedStorageSettings> 
+    </building-->		
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>		
+  </ThingDef>   
+
+	<!-- ==================== wheelbarrow ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSwheelbarrow</defName>
+    <label>Wheelbarrow</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/wheelbarrow/wheelbarrow</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>  
+	  <shaderType>CutoutComplex</shaderType>	  	  
+      <drawSize>(1.2,1.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/wheelbarrow/wheelbarrow_UI</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>		
+      <li>Metallic</li>	  
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>2</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>   
+ 
+ 	<!-- ==================== ResourcesCrate1 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_1ResourcesCrate</defName>
+    <label>ResourcesCrate 1</label>
+    <description>Can Storage up to 10 Stack of WoodLog</description>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate1</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate1</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>WoodLog</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+ 
+  	<!-- ==================== ResourcesCrate2 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_2ResourcesCrate</defName>
+    <label>ResourcesCrate 2</label>
+    <description>Can Storage up to 10 Stack of Steel</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate2</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  	<!-- ==================== ResourcesCrate3 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_3ResourcesCrate</defName>
+    <label>ResourcesCrate 3</label>
+    <description>Can Storage up to 10 Stack of Textiles</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate3</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>Textiles</li>
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef> 
+ 
+  	<!-- ==================== ResourcesCrate4 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_4ResourcesCrate</defName>
+    <label>ResourcesCrate 4</label>
+    <description>Can Storage up to 10 Stack of Leather</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate4</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>Leathers</li>
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>  
+ 
+  	<!-- ==================== ResourcesCrate5 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_5ResourcesCrate</defName>
+    <label>ResourcesCrate 5</label>
+    <description>Can Storage up to 10 Stack of Component</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate5</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate5</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentIndustrial</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>   
+ 
+  	<!-- ==================== ResourcesCrate6 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_6ResourcesCrate</defName>
+    <label>ResourcesCrate 6</label>
+    <description>Can Storage up to 10 Stack of Advanced Component</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate6</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate6</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ComponentSpacer</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+ 
+  	<!-- ==================== ResourcesCrate7 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_7ResourcesCrate</defName>
+    <label>ResourcesCrate 7</label>
+    <description>Can Storage up to 10 Stack of Uranium</description>	
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate7</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate7</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Uranium</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+ 
+   	<!-- ==================== ResourcesCrate8 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_8ResourcesCrate</defName>
+    <label>ResourcesCrate 8</label>
+    <description>Can Storage up to 10 Stack of Gold</description>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate8</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate8</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Gold</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>   
+ 
+   	<!-- ==================== ResourcesCrate9 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_9ResourcesCrate</defName>
+    <label>ResourcesCrate 9</label>
+    <description>Can Storage up to 10 Stack of Jade</description>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate9</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate9</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Jade</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>    
+ 
+   	<!-- ==================== ResourcesCrate10 ==================== -->
+
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_10ResourcesCrate</defName>
+    <label>ResourcesCrate 10</label>
+    <description>Can Storage up to 10 Stack of Plasteel</description>
+    <graphicData>
+      <texPath>Things/ResourcesCrate/ResourcesCrate10</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/ResourcesCrate/ResourcesCrate10</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Plasteel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>     
+ 
+  	<!-- ==================== Industrial Dumpster ==================== -->  
+  
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Industrial_Dumpster_Chunk</defName>
+    <label>Industrial Dumpster(Chunk)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/IndustrialDumpster2/Industria_Dumpster_Chunk</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/IndustrialDumpster2/Industria_Dumpster_Chunk_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>10000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>1000</costStuffCount>	
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>StoneChunks</li>
+          <li>StoneBlocks</li>		  
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>		
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>100</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>	
+  </ThingDef>      
+ 
+  	<!-- ==================== Industrial Dumpster ==================== -->  
+  
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDS_Industrial_Dumpster_Slag</defName>
+    <label>Industrial Dumpster(Slag)</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/IndustrialDumpster2/Industria_Dumpster_Slag</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/IndustrialDumpster2/Industria_Dumpster_Slag_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>10000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>	
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>1000</costStuffCount>	
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>ChunkSlagSteel</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>			
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>100</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>	
+  </ThingDef>       
+ 
+  	<!-- ==================== Industrial Dumpster ==================== -->  
+  
+  <ThingDef ParentName="JDStorageBase" >
+    <defName>JDSIndustrial_Dumpster</defName>
+    <label>Industrial Dumpster</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/IndustrialDumpster2/Industria_Dumpster</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/IndustrialDumpster2/Industria_Dumpster_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>10000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>		  
+    </stuffCategories>
+    <costStuffCount>1000</costStuffCount>	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>100</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>	
+  </ThingDef>       
+  
+ 
+</Defs>

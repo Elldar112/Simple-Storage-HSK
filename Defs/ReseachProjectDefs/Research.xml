@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- <ResearchProjectDef ParentName="HitechBase">
+    <defName>SK_StorageIV</defName>
+    <label>Storage IV</label>
+    <description>Unlocks ability to build massive industrial scale storage.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<tab>Furniture</tab>
+		<prerequisites>
+			<li>SK_StorageIII</li>
+		</prerequisites>
+	<researchViewX>2.80</researchViewX>
+	<researchViewY>6.30</researchViewY>		
+  </ResearchProjectDef> -->
+
+</Defs>

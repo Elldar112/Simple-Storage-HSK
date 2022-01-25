@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+
+  <identifier>[JDS] Simply Storage</identifier>
+  <version>1.1.19</version>
+  
+  <dependencies>
+
+  </dependencies>
+
+  <incompatibleWith></incompatibleWith>
+  <loadBefore></loadBefore>
+
+  <loadAfter>
+
+  </loadAfter>
+
+  <suggests>
+  </suggests>
+
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri></manifestUri>
+  <downloadUri></downloadUri>
+
+</Manifest>
