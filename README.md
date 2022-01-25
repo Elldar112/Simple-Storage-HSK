@@ -38,7 +38,7 @@ v1.4
 - Nerfed OP Basket Pile, now stores 8 stacks instead of 15 in a single cell
 v1.5
 - Large Pallet E and D now cost and store same amount as its other variants
-- New Supply Crate for stone chunks with 5 color variants, can store up to 20 chunks, early game alternative to wheelbarrow to stack chunks before You reasearch and afford industrial dumpster|
+- New Supply Crate for stone chunks with 5 color variants, can store up to 20 chunks, early game alternative to wheelbarrow to stack chunks before You reasearch and afford industrial dumpster
 - New industrial size refrigerator, Mega Fridge, stores up to 96 stacks of food and keeps them frozen
 - Nerfed Fridge slightly, now stores 8 not 10 stacks
 ```
