@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<ModMetaData>
-		<name>[JDS] Simple Storage SK</name>
-		<author>JangoD'soul</author>
+		<name>[JDS] Simple Storage HSK</name>
+		<authors>
+			<li>JangoD'soul</li>
+			<li>Elldar</li>
+		</authors>
 		<supportedVersions>
 			<li>1.2</li>	
 			<li>1.3</li>	
@@ -12,20 +15,12 @@ Hate how your stockpile is overflowing of useless thing or just the fact it just
 a compact way to storage all of your useless Junk that you don't need into my Storage contains, no more of that over size stockpile take away space 
 that you can use for more important things. Now you can have a compack base, Call 1-800-Simply-Storage.
 
-Note: you many get a error let me know, if you feel that one or few of my storage need balance let me know too. 
-
-[h1]Features:[/h1]
- -5 type of wooden crates
- -2 type of metal crates
- -3 type of military grade crates
- -2 type of pallet
- -3 colors of shipping contains 
-
-[h1]Plans:[/h1]
-- All in more storage 
+Important: Due to Deep Storage and Architect Sense conflict, You have to disable "Put all storage units here" in LWM's Deep Storage mod options and restart the game, opening Deep Storage options will break it again putting things inside and outside subcategories until next restart.
 
 [h1]Credits:[/h1]
 - lilwhitemouse for the awesome mod "LWM's Deep Storage"
-- Redone for HSK by Elldar
+- JangoD'soul for the original Simple Storage mod
+
+Remake for HSK by Elldar
 		</description>
 	</ModMetaData>
