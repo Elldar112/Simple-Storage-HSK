@@ -1761,7 +1761,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks> <!-- In-game 10 -->
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
