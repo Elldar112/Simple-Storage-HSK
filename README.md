@@ -6,6 +6,8 @@
 
 Adds over 70 of new storage options, all converted for HSK materials and research and neatly compacted into subcategories. Fully customizable stack size and storage filters via LWM's Deep Storage mod options if You feel like something is too strong/weak.
 
+Original Mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1961098970
+
 **Important: Due to Deep Storage and Architect Sense conflict, You have to disable "Put all storage units here" in LWM's Deep Storage mod options and restart the game, opening Deep Storage options will break it again putting things inside and outside subcategories until next restart.**
 
 Safe to add mid-game, works both on 1.3 and 1.2.
