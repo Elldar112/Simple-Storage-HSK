@@ -164,7 +164,6 @@
 			<li>JDSAmmo_BoxC</li>
 			<li>JDSAmmo_Crate</li>
 			<li>JDSAmmo_Crate_Piles</li>
-			<li>JDSTool_Box</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
@@ -228,7 +227,6 @@
 			<li>JDSIndustrial_shelf</li>
 			<li>JDS_Industrial_Dumpster_Slag</li>
 			<li>JDS_Industrial_Dumpster_Chunk</li>
-			<li>JDSTool_Box</li>
 			<li>JDSShippingContainerRed</li>
 			<li>JDSShippingContainerGreen</li>
 			<li>JDSShippingContainerBlue</li>
