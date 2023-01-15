@@ -38,11 +38,6 @@
 			<li>JDS_Wooden_Crate_B</li>
 			<li>JDS_Wooden_Crate_C</li>
 			<li>JDS_Wooden_Crate_Large</li>
-			<li>JDSPallet_Crate</li>
-			<li>JDS_Large_A_Pallet</li>
-			<li>JDS_Large_B_Pallet</li>
-			<li>JDS_Large_C_Pallet</li>
-			<li>JDS_Large_D_Pallet</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
@@ -103,7 +98,7 @@
 		<label>Barrels</label>
 		<description>Barrels to store things in.</description>
 		<defNames>
-			<li>JDS_Wooden_Barrel</li>
+			<!--<li>JDS_Wooden_Barrel</li>-->
 			<li>JDS_Wooden_Barrel_Pile</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
@@ -150,9 +145,6 @@
 			<li>JDS_ChemfuelPump</li>
 			<li>JDS_Large_Chemfuel_Storage</li>
 			<li>JDSSilo</li>
-			<li>JDSPallet_Can</li>
-			<li>JDS_Large_Can_Pallet</li>
-			<li>JDSPallet_Container</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>

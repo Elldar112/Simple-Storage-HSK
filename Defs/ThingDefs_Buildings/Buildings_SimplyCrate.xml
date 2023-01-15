@@ -487,7 +487,7 @@
 		</researchPrerequisites>
   </ThingDef>
   
- 	<!-- ==================== Wooden Barrel ==================== -->
+ 	<!-- ==================== Wooden Barrel ==================== 
 
   <ThingDef ParentName="LWM_DeepStorage" >
     <defName>JDS_Wooden_Barrel</defName>
@@ -537,7 +537,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>2</minNumberStacks>
-        <maxNumberStacks>5</maxNumberStacks> <!-- In-game 5 -->
+        <maxNumberStacks>5</maxNumberStacks> --><!-- In-game 5 
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
@@ -547,7 +547,7 @@
 	     <li>Storage_B1</li>
 		</researchPrerequisites>
   </ThingDef>   
-
+-->
  	<!-- ==================== Wooden Barrel Pile ==================== -->
 
   <ThingDef ParentName="LWM_DeepStorage" >
