@@ -168,7 +168,7 @@
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
-	
+	<!--
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Shipping</defName>
 		<label>Shipping Containers</label>
@@ -181,7 +181,7 @@
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
-	
+	-->
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Dumpster</defName>
 		<label>Industrial Dumpsters</label>
@@ -225,14 +225,9 @@
 		<description>Massive, industrial scale storage.</description>
 		<defNames>
 			<li>JDSIndustrial_shelf</li>
-			<li>JDS_Industrial_Dumpster_Slag</li>
-			<li>JDS_Industrial_Dumpster_Chunk</li>
 			<li>JDSShippingContainerRed</li>
 			<li>JDSShippingContainerGreen</li>
 			<li>JDSShippingContainerBlue</li>
-			<li>JDSBank_Vault</li>
-			<li>JDSSilo</li>
-			<li>JDSMegaFridge</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
