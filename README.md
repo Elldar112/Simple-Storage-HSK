@@ -1,6 +1,3 @@
-**Simple Storage HSK** *09-09-2021*
-
-
 
 ![Preview](https://user-images.githubusercontent.com/64644323/151061009-a288b03d-4d86-49d4-b06a-7e7293ca971b.png)
 
