@@ -195,7 +195,6 @@
       </li>
     </comps>
 	<researchPrerequisites>
-      <li>Brewing</li>
 	  <li>Storage_B3</li>
     </researchPrerequisites>
   </ThingDef> 
@@ -291,8 +290,7 @@
 		</li>
     </comps>
 	<researchPrerequisites>
-	  <li>Storage_C3</li>
-	  <li>Temperature_control_C2</li>
+	  <li>Temperature_control_C3</li>
     </researchPrerequisites>
   </ThingDef> 
   
@@ -387,8 +385,7 @@
 		</li>
     </comps>
 	<researchPrerequisites>
-	  <li>Storage_D1</li>
-	  <li>Temperature_control_C2</li>
+	  <li>Temperature_control_D1</li>
     </researchPrerequisites>
   </ThingDef> 
 
@@ -741,6 +738,8 @@
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
       </li>
     </comps>
 		<researchPrerequisites>
@@ -1827,6 +1826,8 @@
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
       </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
     </comps>
 		<researchPrerequisites>
 	     <li>Storage_C3</li>
@@ -1887,6 +1888,8 @@
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
       </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
     </comps>
 	<researchPrerequisites>
       <li>Storage_D1</li>
@@ -1941,6 +1944,8 @@
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
       </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
     </comps>
 		<researchPrerequisites>
 	     <li>Storage_C3</li>
@@ -1994,6 +1999,8 @@
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
       </li>
     </comps>
 		<researchPrerequisites>
