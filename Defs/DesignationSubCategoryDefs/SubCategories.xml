@@ -21,6 +21,7 @@
 			<li>JDS_13ResourcesCrate</li>
 			<li>JDS_14ResourcesCrate</li>
 			<li>JDS_15ResourcesCrate</li>
+			<li>JDSBeer_Crate</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
@@ -145,6 +146,7 @@
 			<li>JDS_ChemfuelPump</li>
 			<li>JDS_Large_Chemfuel_Storage</li>
 			<li>JDSSilo</li>
+			<li>JDS_Bulk_Water</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
@@ -220,7 +222,7 @@
 	</ArchitectSense.DesignationSubCategoryDef>
 	
 	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_Industrial</defName>
+		<defName>SubCategory_Industrial_Storage</defName>
 		<label>Industrial Storage</label>
 		<description>Massive, industrial scale storage.</description>
 		<defNames>
@@ -228,8 +230,25 @@
 			<li>JDSShippingContainerRed</li>
 			<li>JDSShippingContainerGreen</li>
 			<li>JDSShippingContainerBlue</li>
+			<li>JDSVending_Machine</li>
+			<li>JDSVending_Machine_two</li>
+			<li>JDS_Med_Storage</li>
 		</defNames>
 		<designationCategory>LWM_DS_Storage</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StorageMisc</defName>
+		<label>Misc</label>
+		<description>Random Storage.</description>
+		<defNames>
+			<li>JDS_Basket</li>
+			<li>JDS_Large_Post_Box</li>
+			<li>JDSwheelbarrow</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
 </Defs>
