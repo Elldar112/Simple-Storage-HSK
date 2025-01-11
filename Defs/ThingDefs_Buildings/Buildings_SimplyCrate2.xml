@@ -2926,7 +2926,6 @@
         <filter>
         <thingDefs>
           <li>ChunkSlagSteel</li>
-		  <li>ChunkMechanoidSlag</li>
         </thingDefs>
         </filter>
       </fixedStorageSettings>
