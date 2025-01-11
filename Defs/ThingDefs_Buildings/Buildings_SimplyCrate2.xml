@@ -612,6 +612,8 @@
 			<li>Prometheum</li>
 			<li>FSX</li>
 			<li>SyntheticAmmonia</li>
+			<li>Polymers</li>
+			<li>Sulphates</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -727,6 +729,8 @@
 			<li>Prometheum</li>
 			<li>FSX</li>
 			<li>SyntheticAmmonia</li>
+			<li>Polymers</li>
+			<li>Sulphates</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -962,6 +966,8 @@
 			<li>Prometheum</li>
 			<li>FSX</li>
 			<li>SyntheticAmmonia</li>
+			<li>Polymers</li>
+			<li>Sulphates</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -1694,6 +1700,8 @@
 			<li>Prometheum</li>
 			<li>FSX</li>
 			<li>SyntheticAmmonia</li>
+			<li>Polymers</li>
+			<li>Sulphates</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -1876,6 +1884,8 @@
 			<li>Prometheum</li>
 			<li>FSX</li>
 			<li>SyntheticAmmonia</li>
+			<li>Polymers</li>
+			<li>Sulphates</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -2916,6 +2926,7 @@
         <filter>
         <thingDefs>
           <li>ChunkSlagSteel</li>
+		  <li>ChunkMechanoidSlag</li>
         </thingDefs>
         </filter>
       </fixedStorageSettings>
