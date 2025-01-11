@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Supply</defName>
+		<label>Supply Crates</label>
+		<description>Supply Crates to store small amounts of materials for Your crafters.</description>
+		<defNames>
+			<li>JDS_1ResourcesCrate</li>
+			<li>JDS_2ResourcesCrate</li>
+			<li>JDS_3ResourcesCrate</li>
+			<li>JDS_4ResourcesCrate</li>
+			<li>JDS_5ResourcesCrate</li>
+			<li>JDS_6ResourcesCrate</li>
+			<li>JDS_7ResourcesCrate</li>
+			<li>JDS_8ResourcesCrate</li>
+			<li>JDS_9ResourcesCrate</li>
+			<li>JDS_10ResourcesCrate</li>
+			<li>JDS_11ResourcesCrate</li>
+			<li>JDS_12ResourcesCrate</li>
+			<li>JDS_13ResourcesCrate</li>
+			<li>JDS_14ResourcesCrate</li>
+			<li>JDS_15ResourcesCrate</li>
+			<!-- <li>JDSBeer_Crate</li> -->
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CrateW</defName>
+		<label>Wooden Crates</label>
+		<description>Wooden crates to store things.</description>
+		<defNames>
+			<li>JDS_Wooden_Crate</li>
+			<li>JDS_Wooden_Crate_Two</li>
+			<li>JDS_Wooden_Crate_Three</li>
+			<li>JDS_Wooden_Crate_four</li>
+			<li>JDS_Wooden_Crate_B</li>
+			<li>JDS_Wooden_Crate_C</li>
+			<li>JDS_Wooden_Crate_Large</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_CrateM</defName>
+		<label>Metal Crates</label>
+		<description>Sturdy metal crates to store things, can fit more and are more durable than wooden ones.</description>
+		<defNames>
+			<li>JDS_Metal_Crate</li>
+			<li>JDS_Metal_Crate_Small_Pile</li>
+			<li>JDS_Metal_Crate_Pile</li>
+			<li>JDS_Metal_Crate_Large_Pile</li>
+			<li>JDS_Metal_Crate_Bigger_Pile</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Pallet</defName>
+		<label>Pallets</label>
+		<description>Pallets to put things on.</description>
+		<defNames>
+			<li>JDS_Large_Pallet</li>
+			<li>JDSPallet</li>
+			<li>JDSPallet_Crate</li>
+			<li>JDS_Large_A_Pallet</li>
+			<li>JDS_Large_B_Pallet</li>
+			<li>JDS_Large_C_Pallet</li>
+			<li>JDS_Large_D_Pallet</li>
+			<li>JDS_Large_E_Pallet</li>
+			<li>JDSPallet_Can</li>
+			<li>JDS_Large_Can_Pallet</li>
+			<li>JDSPallet_Container</li>
+			<li>JDSPallet_Box</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Bundle</defName>
+		<label>Bundles</label>
+		<description>Wrapped bundles, cheap way to store things.</description>
+		<defNames>
+			<li>JDS_Bundles_Wrap</li>
+			<li>JDS_Bundles_Wrap_Big</li>
+			<li>JDS_Bundles_Wrap_Pile</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Barrel</defName>
+		<label>Barrels</label>
+		<description>Barrels to store things in.</description>
+		<defNames>
+			<li>JDS_Wooden_Barrel</li>
+			<li>JDS_Wooden_Barrel_Pile</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StorageShelfs</defName>
+		<label>Storage Shelfs</label>
+		<description>Storage shelfs for Your general store.</description>
+		<defNames>
+			<li>JDSMetal_Shelf_A_Full</li>
+			<li>JDSMetal_Shelf_B_Full</li>
+			<li>JDSShelf_A_Full</li>
+			<li>JDSShelf_A_Empty</li>
+			<li>JDS_File_Shelf</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<!-- <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Refrigerators</defName>
+		<label>Refrigerators</label>
+		<description>Refrigerators to keep the food fresh.</description>
+		<defNames>
+			<li>JDSRefrigerator</li>
+			<li>JDSMegaFridge</li>
+			<li>RimFridge_SingleRefrigerator</li>
+			<li>RimFridge_Refrigerator</li>
+			<li>RimFridge_QuadRefrigerator</li>
+			<li>RimFridge_SingleWallRefrigerator</li>
+			<li>RimFridge_WallRefrigerator</li>
+			<li>JDSVending_Machine</li>
+			<li>JDSVending_Machine_two</li>
+			<li>JDS_Med_Storage</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef> -->
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Chemical</defName>
+		<label>Chemical Storage</label>
+		<description>Verious containers for chemicals.</description>
+		<defNames>
+			<li>JDS_ChemfuelPump</li>
+			<li>JDS_Large_Chemfuel_Storage</li>
+			<li>JDSSilo</li>
+			<!-- <li>JDS_Bulk_Water</li> -->
+			<li>JDSPallet_Can</li>
+			<li>JDS_Large_Can_Pallet</li>
+			<li>JDSPallet_Container</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Military</defName>
+		<label>Military Storage</label>
+		<description>Military-grade storage for weapons and ammo.</description>
+		<defNames>
+			<li>JDSMilitaryGradeCrateSmall</li>
+			<li>JDSMilitary_Grade_Crate_Small_Pile</li>
+			<li>JDSMilitary_Grade_crate_Large</li>
+			<li>JDSMilitary_Grade_Crate_Long</li>
+			<li>JDSAmmo_BoxA</li>
+			<li>JDSAmmo_BoxB</li>
+			<li>JDSAmmo_BoxC</li>
+			<li>JDSAmmo_Crate</li>
+			<li>JDSAmmo_Crate_Piles</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	<!--
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Shipping</defName>
+		<label>Shipping Containers</label>
+		<description>A shipping container is a container with strength suitable to withstand shipment, storage, and handling.</description>
+		<defNames>
+			<li>JDSShippingContainerRed</li>
+			<li>JDSShippingContainerGreen</li>
+			<li>JDSShippingContainerBlue</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	-->
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Dumpster</defName>
+		<label>Industrial Dumpsters</label>
+		<description>Massive industrial dumpsters for holding large amounts of chunks, blocks and slag.</description>
+		<defNames>
+			<li>JDS_Industrial_Dumpster_Slag</li>
+			<li>JDS_Industrial_Dumpster_Chunk</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Lockers</defName>
+		<label>Lockers</label>
+		<description>Lockers for storing apparel.</description>
+		<defNames>
+			<li>JDSmaller_locker</li>
+			<li>JDSLarge_locker</li>
+			<li>JDSTool_Box</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Vault</defName>
+		<label>Vaults</label>
+		<description>Vaults for storing valuables.</description>
+		<defNames>
+			<li>JDSBank_Vault</li>
+			<li>JDSSafe</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Industrial_Storage</defName>
+		<label>Industrial Storage</label>
+		<description>Massive, industrial scale storage.</description>
+		<defNames>
+			<li>JDSIndustrial_shelf</li>
+			<li>JDSShippingContainerRed</li>
+			<li>JDSShippingContainerGreen</li>
+			<li>JDSShippingContainerBlue</li>
+			<!-- <li>JDSVending_Machine</li>
+			<li>JDSVending_Machine_two</li>
+			<li>JDS_Med_Storage</li> -->
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_StorageMisc</defName>
+		<label>Misc</label>
+		<description>Random Storage.</description>
+		<defNames>
+			<li>JDS_Basket</li>
+			<li>JDS_Large_Post_Box</li>
+			<li>JDSwheelbarrow</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>
