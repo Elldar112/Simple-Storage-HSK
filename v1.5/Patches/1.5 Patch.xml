@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd"> <!-- Add Mechanoid Chunk Slag to Industrial Dumpster in 1.5 -->
+    <xpath>Defs/ThingDef[defName="JDS_Industrial_Dumpster_Slag"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+    <value>
+      <li>ChunkMechanoidSlag</li>
+    </value>
+  </Operation>
+</Patch>
