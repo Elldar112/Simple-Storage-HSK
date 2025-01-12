@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Refrigerators"]</xpath>
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Refrigerators"]/defNames</xpath>
     <value>
 		<li>JDSRefrigerator</li>
 		<li>JDSMegaFridge</li>
@@ -12,7 +12,7 @@
   </Operation>
   
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]</xpath>
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]/defNames</xpath>
     <value>
 		<li>JDS_Bulk_Water</li>
 		<li>JDSBeer_Crate</li>
