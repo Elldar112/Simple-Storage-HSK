@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- <ResearchProjectDef ParentName="HitechBase">
+    <defName>SK_StorageIV</defName>
+    <label>Storage IV</label>
+    <description>Unlocks ability to build massive industrial scale storage.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<tab>Furniture</tab>
+		<prerequisites>
+			<li>SK_StorageIII</li>
+		</prerequisites>
+	<researchViewX>2.80</researchViewX>
+	<researchViewY>6.30</researchViewY>		
+  </ResearchProjectDef> -->
+
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>Temperature_control_D1</defName>
+		<label>Temperature control VI</label>
+		<description>The best fridge, other than those from the glitterworlds.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>Temperature_control_C3</li>
+			<li>Storage_C4</li>
+		</prerequisites>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>11.00</researchViewY>
+		<tab>Buildings_SK</tab>
+		<modExtensions>
+			<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+		</modExtensions>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+</Defs>
