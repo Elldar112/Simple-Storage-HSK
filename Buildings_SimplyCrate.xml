@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- ==================== Wooden Crates ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage">
+    <defName>JDS_Wooden_Crate</defName>
+    <label>Crate A</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>
+    <graphicData>
+      <texPath>Things/WoodenCrate/WoodenCrate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate/WoodenCrate_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	<ComponentMedieval>2</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Storage_B3</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+	<!-- ==================== Wooden Crates 2 ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_Two</defName>
+    <label>Crate A2</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>	
+    <graphicData>
+      <texPath>Things/WoodenCrate2/WoodenCrate2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.6,2.6)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate2/WoodenCrate2_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>40</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+	<costList>
+	<ComponentMedieval>4</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>12</maxNumberStacks> <!-- In-game 24 -->
+        <timeStoringTakes>180</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>
+
+	<!-- ==================== Wooden Crates 3 ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_Three</defName>
+    <label>Crate A3</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>	
+    <graphicData>
+      <texPath>Things/WoodenCrate3/WoodenLargeCrate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.6,2.6)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate3/WoodenLargeCrate_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>220</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+	<costList>
+	<ComponentMedieval>6</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>12</maxNumberStacks> <!-- In-game 48 -->
+        <timeStoringTakes>190</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>
+
+	<!-- ==================== Wooden Crates 4 ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_four</defName>
+    <label>Crate A4</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>	
+    <graphicData>
+      <texPath>Things/WoodenCrate4/WoodenCrate4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.6,2.6)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate4/WoodenCrate4_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>240</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>280</costStuffCount>
+	<costList>
+	<ComponentMedieval>10</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>14</maxNumberStacks><!-- In-game 56 -->
+        <timeStoringTakes>200</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>
+  
+	<!-- ==================== Wooden Crates B ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_B</defName>
+    <label>Crate B</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>	
+    <graphicData>
+      <texPath>Things/WoodenCrate/Crate_B</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.6,1.6)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate/Crate_B_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	<ComponentMedieval>2</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_B3</li>
+		</researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== Wooden Crates C ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_C</defName>
+    <label>Crate C</label>
+    <description>An open box of wooden slats or a usually wooden protective case or framework for shipping.</description>
+    <graphicData>
+      <texPath>Things/WoodenCrate/Crate_C</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.3,2.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrate/Crate_C_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>140</costStuffCount>
+	<costList>
+	<ComponentMedieval>4</ComponentMedieval>
+	</costList>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>12</maxNumberStacks> <!-- In-game 24 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== Wooden Crate Medium ==================== -->
+
+<!--  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>Wooden_Crate_Medium</defName>
+    <label>Wooden Crate Medium</label>
+    <description>A high-capacity crate for securely storing many weapons. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/WoodenCrateMedium/Wooden_Crate_Medium</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1.7)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrateMedium/Wooden_Crate_Medium_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+     <costList>
+      <WoodLog>20</WoodLog>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Artifacts</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings> 
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>50</maxNumberStacks>
+        <maxTotalMass>50</maxTotalMass>
+        <maxMassOfStoredItem>10</maxMassOfStoredItem>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+  </ThingDef> -->
+
+	<!-- ==================== Wooden Crates Large ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Crate_Large</defName>
+    <label>Crate Large</label>
+    <description>A high-capacity Wooden crate for securely storing many items.</description>
+    <graphicData>
+      <texPath>Things/WoodenCrateLarge/Wooden_Crate_Large</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.7,2.7)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenCrateLarge/Wooden_Crate_Large_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>420</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>320</costStuffCount>
+	<costList>
+	<ComponentMedieval>12</ComponentMedieval>
+	</costList>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks> <!-- In-game 64 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>
+  
+ 	<!-- ==================== Wooden Barrel ==================== 
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Barrel</defName>
+    <label>Barrel</label>
+    <description>A Wooden barrel to store various things.</description>
+    <graphicData>
+      <texPath>Things/WoodenBarrel/Barrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1.1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenBarrel/Barrel_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>70</MaxHitPoints>
+      <WorkToBuild>700</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+	<costList>
+	<ComponentMedieval>2</ComponentMedieval>
+	</costList>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks> --><!-- In-game 5 
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_B1</li>
+		</researchPrerequisites>
+  </ThingDef>   
+-->
+ 	<!-- ==================== Wooden Barrel Pile ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Wooden_Barrel_Pile</defName>
+    <label>Barrel Pile</label>
+    <description>A Pile of barrels to store various things.</description>
+    <graphicData>
+      <texPath>Things/WoodenBarrel/Barrel_Pile</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/WoodenBarrel/Barrel_Pile_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>26</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>180</costStuffCount>
+	<costList>
+	<ComponentMedieval>6</ComponentMedieval>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks> <!-- In-game 12 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>   
+  
+	<!-- ==================== Metal Crates  ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Metal_Crate</defName>
+    <label>Metal Crate</label>
+    <description>A high-capacity crate for securely storing many things. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/MetalCrateSmall/MetalCrate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.3,1.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalCrateSmall/MetalCrate_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>950</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>14</maxNumberStacks> <!-- In-game 14 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>  
+  
+	<!-- ==================== Metal Crates Pile ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Metal_Crate_Pile</defName>
+    <label>Metal Crate Pile</label>
+    <description>A high-capacity crate for securely storing many things. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/MetalCratePile/MetalCratePile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.7,2.7)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalCratePile/MetalCratePile_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>240</costStuffCount>
+	<costList>
+	<ComponentIndustrial>8</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks><!-- In-game 64 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>
+ 
+ 	<!-- ==================== Metal Crates Small Pile ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Metal_Crate_Small_Pile</defName>
+    <label>Metal Crate Small Pile</label>
+    <description>A high-capacity crate for securely storing many things. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/MetalCrateSmallPile/Metal_Crate_B</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.7,2.7)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalCrateSmallPile/Metal_Crate_B_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>1100</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>180</costStuffCount>
+	<costList>
+	<ComponentIndustrial>6</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>14</maxNumberStacks><!-- In-game 56 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>
+  
+   	<!-- ==================== Metal Crates Large Pile ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Metal_Crate_Large_Pile</defName>
+    <label>Metal Crate Large Pile</label>
+    <description>A high-capacity crate for securely storing many things. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/MetalCrateLargePile/Metal_Crate_Large_Pile</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4.2,3.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalCrateLargePile/Metal_Crate_Large_Pile_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(3,2)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>300</costStuffCount>
+	<costList>
+	<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks><!-- In-game 96 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>  
+  
+ 	<!-- ==================== Metal Crates Bigger Pile ==================== -->
+
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDS_Metal_Crate_Bigger_Pile</defName>
+    <label>Metal Crate Bigger Pile</label>
+    <description>A high-capacity crate for securely storing many things. Items stored in this will not deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Things/MetalCrateBiggerPile/Metal_Crate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.2,3.2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MetalCrateBiggerPile/Metal_Crate_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(3,2)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>300</costStuffCount>
+	<costList>
+	<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks><!-- In-game 96 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>  
+ 
+	<!-- ==================== Military Grade Crate Small ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMilitaryGradeCrateSmall</defName>
+    <label>Military Grade Crate Small</label>
+    <description>A military grade crate for securely storing many weapons and ammo.</description>
+    <graphicData>
+      <texPath>Things/MilitaryGradeCrateSmall/Military_Grade_Crate_Small</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MilitaryGradeCrateSmall/Military_Grade_Crate_Small_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>	
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 10 -->
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>   
+  
+	<!-- ==================== Military Grade Crate Small Pile ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMilitary_Grade_Crate_Small_Pile</defName>
+    <label>Military Grade Crate Pile</label>
+    <description>A military grade crate for securely storing many weapons and ammo.</description>
+    <graphicData>
+      <texPath>Things/MilitaryGradeCratePlile/Military_Grade_crate_pile</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MilitaryGradeCratePlile/Military_Grade_crate_pile_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>350</costStuffCount>
+	<costList>
+	<ComponentIndustrial>10</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>	
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>12</maxNumberStacks><!-- In-game 48 -->
+        <timeStoringTakes>250</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>		
+  </ThingDef>    
+
+	<!-- ==================== Military Grade Crate Long ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMilitary_Grade_Crate_Long</defName>
+    <label>Military Grade Crate Long</label>
+    <description>A military grade crate for securely storing many weapons and ammo.</description>
+    <graphicData>
+      <texPath>Things/MilitaryGradeCrateLong/Military_Grade_Crate_Long</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MilitaryGradeCrateLong/Military_Grade_Crate_Long_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(3,1)</size>
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+	<costList>
+	<ComponentIndustrial>6</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>	
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 30 -->
+        <timeStoringTakes>180</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>		
+  </ThingDef>       
+ 
+	<!-- ==================== Military Grade Crate Large ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSMilitary_Grade_crate_Large</defName>
+    <label>Military Grade Crate Large</label>
+    <description>A military grade crate for securely storing many weapons and ammo.</description>
+    <graphicData>
+      <texPath>Things/MilitaryGradeCrateLarge/Military_Grade_crate_Large</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,1.8)</drawSize> <!-- Change the Size of the Outline -->
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/MilitaryGradeCrateLarge/Military_Grade_crate_Large_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(2,1)</size> <!-- Change the Image -->
+    <statBases>
+      <Beauty>0.10</Beauty>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>140</costStuffCount>
+	<costList>
+	<ComponentIndustrial>4</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>	
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks> <!-- In-game 20 -->
+        <timeStoringTakes>180</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>		
+  </ThingDef>       
+ 
+	<!-- ==================== Shipping Container Red ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSShippingContainerRed</defName>
+    <label>Shipping Container Red</label>
+    <description>A shipping container is a container with strength suitable to withstand shipment, storage, and handling.</description>
+    <graphicData>
+      <texPath>Things/ShippingContainerRed/Shipping_Container_Red</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerRed/Shipping_Container_Red_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>1000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>StrongMetallic</li>
+    </stuffCategories>
+    <costStuffCount>750</costStuffCount>
+	<costList>
+	<ComponentIndustrial>25</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Low</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks><!-- In-game 300 -->
+        <timeStoringTakes>700</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Storage_D1</li>
+    </researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Blue ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage">
+    <defName>JDSShippingContainerBlue</defName>
+    <label>Shipping Container Blue</label>
+    <description>A shipping container is a container with strength suitable to withstand shipment, storage, and handling.</description>
+    <graphicData>
+      <texPath>Things/ShippingContainerBlue/Shipping_Container_Blue</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerBlue/Shipping_Container_Blue_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>1000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>StrongMetallic</li>
+    </stuffCategories>
+    <costStuffCount>750</costStuffCount>
+	<costList>
+	<ComponentIndustrial>25</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Low</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks><!-- In-game 300 -->
+        <timeStoringTakes>700</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Storage_D1</li>
+    </researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== Shipping Container Green ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSShippingContainerGreen</defName>
+    <label>Shipping Container Green</label>
+    <description>A shipping container is a container with strength suitable to withstand shipment, storage, and handling.</description>
+    <graphicData>
+      <texPath>Things/ShippingContainerGreen/Shipping_Container_Green</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ShippingContainerGreen/Shipping_Container_Green_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>1000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>StrongMetallic</li>
+    </stuffCategories>
+    <costStuffCount>750</costStuffCount>
+	<costList>
+	<ComponentIndustrial>25</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Low</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>25</maxNumberStacks><!-- In-game 300 -->
+        <timeStoringTakes>700</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Storage_D1</li>
+    </researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== Tool Box ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSTool_Box</defName>
+    <label>The Tool Box</label>
+    <description>A giant vault to store all the Tools, weapons and apparel.</description>
+    <graphicData>
+      <texPath>Things/ToolBox/Tool_Box</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/ToolBox/Tool_Box_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(4,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>1000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>StrongMetallic</li>
+    </stuffCategories>
+    <costStuffCount>500</costStuffCount>
+	<costList>
+	<ComponentIndustrial>20</ComponentIndustrial>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Low</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+					<li>Apparel</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Low</priority>
+        <filter>
+		<categories>
+		<li>SurvivalTools</li>
+		</categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>20</maxNumberStacks><!-- In-game 240 -->
+        <timeStoringTakes>400</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_D1</li>
+		</researchPrerequisites>
+  </ThingDef>  
+
+	<!-- ==================== PalletBox ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSPallet_Box</defName>
+    <label>Pallet Cardboard Box</label>
+    <description>Cardboard boxes on a steel Pallet</description>
+    <graphicData>
+      <texPath>Things/PalletBox/Pallet_Box</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/PalletBox/Pallet_Box_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1100</WorkToBuild>
+      <Flammability>2</Flammability>
+      <Mass>150</Mass>
+    </statBases>
+    <costList>
+      <WoodPlank>100</WoodPlank>
+	  <Plasteel>50</Plasteel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>15</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C1</li>
+		</researchPrerequisites>
+  </ThingDef> 
+
+	<!-- ==================== Pallet Container ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSPallet_Container</defName>
+    <label>Chemicals Metal Pallet</label>
+    <description>Metal cans placed on steel pallet, used to store chemicals.</description>
+    <graphicData>
+      <texPath>Things/PalletContainer/Pallet_Container</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/PalletContainer/Pallet_Container_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1100</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>20</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>120</costStuffCount>
+	<costList>
+	<ComponentIndustrial>4</ComponentIndustrial>
+	<Plasteel>50</Plasteel>
+	</costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+			<thingDefs>
+			<li>Chemfuel</li>
+			<li>Napalm</li>
+			<li>Prometheum</li>
+			<li>FSX</li>
+			<li>SyntheticAmmonia</li>
+			</thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef> 
+  
+ 
+	<!-- ==================== Industrial shelf ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSIndustrial_shelf</defName>
+    <label>Industrial Shelf</label>
+    <description>Massive industrial scale shelf to store all the things.</description>
+    <graphicData>
+      <texPath>Things/Industrial_Shelf/Industrial_shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6,4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/Industrial_Shelf/Industrial_shelf_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(5,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>1550</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <Mass>2000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>StrongMetallic</li>
+    </stuffCategories>
+    <costStuffCount>450</costStuffCount>
+	<costList>
+      <WoodPlank>500</WoodPlank>
+	  <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Low</priority>
+        <filter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedCategories>
+				<li>Corpses</li>
+				<li>Chunks</li>
+				<li>StoneBlocks</li>
+			</disallowedCategories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>18</maxNumberStacks>
+        <timeStoringTakes>380</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+		<li>Storage_D1</li>
+    </researchPrerequisites>
+  </ThingDef> 
+  
+  
+	<!-- ==================== Bank Vault ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSBank_Vault</defName>
+    <label>Bank Vault</label>
+    <description>A massive Bank Vault to securely store all the valuables.</description>
+    <graphicData>
+      <texPath>Things/BankVault/Bank_Vault</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/BankVault/Bank_Vault_UI</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <size>(3,3)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>100000</Mass>  
+    </statBases>
+		<stuffCategories>
+		<li>SolidMetallic</li>
+		</stuffCategories>
+	<costStuffCount>700</costStuffCount>
+    <costList>
+	  <Mechanism>7</Mechanism>
+      <ComponentIndustrial>30</ComponentIndustrial>
+	  <ReinforcedConcrete>200</ReinforcedConcrete>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+		  <li>Silver</li>
+		  <li>Gold</li>
+		  <li>Jade</li>
+		  <li>RoughGem</li>
+		  <li>CutGem</li>
+		  <li>RoughUltrahardGem</li>
+		  <li>CutUltrahardGem</li>
+		  </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>35</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>Storage_D1</li>
+    </researchPrerequisites>	
+  </ThingDef> 
+  
+  	<!-- ==================== Ammo Box A ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSAmmo_BoxA</defName>
+    <label>Ammo Box</label>
+    <description>A box to store ammo.</description>
+    <graphicData>
+      <texPath>Things/AmmoBox/Ammo_Box_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/AmmoBox/Ammo_Box_A_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>5</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Ammo</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>8</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef> 
+  
+  	<!-- ==================== Ammo Box B ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSAmmo_BoxB</defName>
+    <label>Ammo Box Small Pile</label>
+    <description>A pile of boxes to store ammo.</description>
+    <graphicData>
+      <texPath>Things/AmmoBox/Ammo_Box_B</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/AmmoBox/Ammo_Box_B_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>20</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+	<costList>
+	  <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Ammo</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>	
+  </ThingDef>   
+  
+  	<!-- ==================== Ammo Box C ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSAmmo_BoxC</defName>
+    <label>Ammo Box Large Pile</label>
+    <description>A pile of boxes to store ammo.</description>
+    <graphicData>
+      <texPath>Things/AmmoBox/Ammo_Box_C</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.5,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/AmmoBox/Ammo_Box_C_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>50</Mass>
+	</statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>320</costStuffCount>
+	<costList>
+	  <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Ammo</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>24</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>   
+
+  	<!-- ==================== Ammo Crate ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSAmmo_Crate</defName>
+    <label>Ammo Crate</label>
+    <description>A crate to store all the ammo.</description>
+    <graphicData>
+      <texPath>Things/AmmoCrate/Ammo_Crate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.2,1.2)</drawSize>
+      <drawRotated>false</drawRotated>		
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/AmmoCrate/Ammo_Crate_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(1,1)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>10000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+	<costList>
+	<ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Ammo</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+    </building>
+	    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>100</weight>
+          <only>(0.29,0.33,0.13)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>14</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>   
+
+  	<!-- ==================== Ammo Crate Piles ==================== -->  
+  
+  <ThingDef ParentName="LWM_DeepStorage" >
+    <defName>JDSAmmo_Crate_Piles</defName>
+    <label>Ammo Crate Pile</label>
+    <description>A pile of crates to store all the ammo.</description>
+    <graphicData>
+      <texPath>Things/AmmoCrate/Ammo_Crate_Pile</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.4,2.4)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <uiIconPath>Things/AmmoCrate/Ammo_Crate_Pile_UI</uiIconPath>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(2,2)</size>
+    <statBases>
+      <Beauty>0.7</Beauty>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>10000</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>450</costStuffCount>
+	<costList>
+	<ComponentIndustrial>18</ComponentIndustrial>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Ammo</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>	
+    </building>
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>2</minNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+      </li>
+      <li Class="SK.CompProperties_ContainerBase">
+      </li>
+    </comps>
+		<researchPrerequisites>
+	     <li>Storage_C3</li>
+		</researchPrerequisites>
+  </ThingDef>   
+
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Refrigerators"]</xpath>
+    <value>
+		<li>JDSRefrigerator</li>
+		<li>JDSMegaFridge</li>
+      	<li>JDSVending_Machine</li>
+		<li>JDSVending_Machine_two</li>
+		<li>JDS_Med_Storage</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]</xpath>
+    <value>
+		<li>JDS_Bulk_Water</li>
+		<li>JDSBeer_Crate</li>
+    </value>
+  </Operation>
+</Patch>
