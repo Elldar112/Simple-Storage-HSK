@@ -834,7 +834,6 @@
 			<li>TechprofSubpersonaCore</li>
 			<li>WeatherControllerCore</li>
 			<li>IonCannonControllerCore</li>
-			<li>PileOfBooks</li>
 			</thingDefs>
         </filter>
       </fixedStorageSettings>
